@@ -1909,10 +1909,10 @@
 
 // Travel limits (linear=mm, rotational=°) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
-#define Y_MIN_POS 0
+#define Y_MIN_POS -19
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
-#define Y_MAX_POS Y_BED_SIZE
+#define Y_MAX_POS 224
 #define Z_MAX_POS 250
 //#define I_MIN_POS 0
 //#define I_MAX_POS 50
@@ -2416,20 +2416,20 @@
 
 #if ENABLED(SKEW_CORRECTION)
   // Input all length measurements here:
-  #define XY_DIAG_AC 141.398
-  #define XY_DIAG_BD 141.445
-  #define XY_SIDE_AD 99.215
+  #define XY_DIAG_AC 141.752
+  #define XY_DIAG_BD 141.09
+  #define XY_SIDE_AD 99.495
 
   // Or, set the XY skew factor directly:
   //#define XY_SKEW_FACTOR 0.0
 
   #define SKEW_CORRECTION_FOR_Z
   #if ENABLED(SKEW_CORRECTION_FOR_Z)
-    #define XZ_DIAG_AC 141.938
-    #define XZ_DIAG_BD 140.903
-    #define YZ_DIAG_AC 141.189
-    #define YZ_DIAG_BD 141.653
-    #define YZ_SIDE_AD 99.288
+    #define XZ_DIAG_AC 142.188
+    #define XZ_DIAG_BD 140.651
+    #define YZ_DIAG_AC 141.124
+    #define YZ_DIAG_BD 141.718
+    #define YZ_SIDE_AD 99.51
 
     // Or, set the Z skew factors directly:
     //#define XZ_SKEW_FACTOR 0.0
